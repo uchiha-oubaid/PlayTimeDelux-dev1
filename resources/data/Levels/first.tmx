@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="64" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="12">
+ <tileset firstgid="1" name="mainSheet" tilewidth="64" tileheight="64" tilecount="12" columns="4">
+  <image source="../../assets/mainSheet.png" width="256" height="192"/>
+ </tileset>
+ <layer id="2" name="background" width="10" height="10">
+  <data encoding="csv">
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10,
+10,10,10,10,10,10,10,10,10,10
+</data>
+ </layer>
+ <layer id="1" name="level" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+2,4,6,2,3,3,3,3,3,4,
+0,0,5,0,0,0,0,0,0,0,
+0,0,5,0,0,0,0,0,0,0,
+2,4,9,2,3,3,4,1,2,4,
+0,0,0,0,0,0,0,5,0,0,
+0,0,0,0,0,0,0,5,0,0,
+0,0,0,0,0,0,0,5,0,0,
+2,3,3,3,3,3,4,9,2,4
+</data>
+ </layer>
+ <objectgroup id="3" name="objects">
+  <object id="2" name="door" x="346.5" y="343.5">
+   <point/>
+  </object>
+  <object id="3" name="door" x="608" y="152.667">
+   <point/>
+  </object>
+  <object id="5" name="playerCoords" x="206.667" y="596">
+   <point/>
+  </object>
+  <object id="7" name="book" x="603.333" y="342">
+   <point/>
+  </object>
+  <object id="9" name="book" x="510" y="150">
+   <point/>
+  </object>
+  <object id="10" name="book" x="32.6667" y="152">
+   <point/>
+  </object>
+  <object id="11" name="book" x="239.333" y="342.667">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
