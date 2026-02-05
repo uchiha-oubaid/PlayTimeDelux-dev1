@@ -2,6 +2,9 @@
 
 local anim8 = require 'librairies/anim8'
 local sti = require 'librairies/sti'
+local mapFiles = {
+    first = require 'resources/data/Levels/first'
+}
 
 local game = {
     scale = 4,
@@ -14,8 +17,8 @@ local game = {
 function love.load()
     love.graphics.setDefaultFilter("nearest", "nearest")
     player =  {
-        x = 400,
-        y = 300,
+        x = mapFiles.first.layers[3].objects[3].x,
+        y = mapFiles.first.layers[3].objects[3].y,
         speed = 4,
         spriteSheet = love.graphics.newImage('resources/assets/player.png'),
         isInLadder = false
@@ -70,7 +73,7 @@ function love.draw()
     love.graphics.setColor(1, 1, 1) -- preventing something
     game.levels.first:draw()
 
-    player.currentAnim:draw(player.spriteSheet, player.x, player.y, nil, game.scale)
+    player.currentAnim:draw(player.spriteSheet, player.x, player.y, nil, game.scale, nil, 16, 16)
     love.graphics.setColor(0, 0, 0)
     love.graphics.print("FPS: "..tostring(fps), 10, 10) -- the 10s are x and y
 end
