@@ -2,6 +2,7 @@
 
 local anim8 = require 'librairies/anim8'
 local sti = require 'librairies/sti'
+local shaders = require 'shaders'
 local mapFiles = {
     first = require 'resources/data/Levels/first'
 }
@@ -71,9 +72,12 @@ end
 
 function love.draw()
     love.graphics.setColor(1, 1, 1) -- preventing something
-    game.levels.first:draw()
 
+    --love.graphics.setShader(shaders.green)
+    game.levels.first:draw()
     player.currentAnim:draw(player.spriteSheet, player.x, player.y, nil, game.scale, nil, 16, 16)
+    --love.graphics.setShader()
+
     love.graphics.setColor(0, 0, 0)
     love.graphics.print("FPS: "..tostring(fps), 10, 10) -- the 10s are x and y
 end
