@@ -10,7 +10,7 @@ return {
   tilewidth = 64,
   tileheight = 64,
   nextlayerid = 4,
-  nextobjectid = 12,
+  nextobjectid = 14,
   properties = {},
   tilesets = {
     {
@@ -94,7 +94,7 @@ return {
       data = {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        2, 4, 6, 2, 3, 3, 3, 3, 3, 4,
+        2, 4, 1, 2, 3, 3, 3, 3, 3, 4,
         0, 0, 5, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 5, 0, 0, 0, 0, 0, 0, 0,
         2, 4, 9, 2, 3, 3, 4, 1, 2, 4,
@@ -207,6 +207,32 @@ return {
           height = 0,
           rotation = 0,
           visible = true,
+          properties = {}
+        },
+        {
+          id = 12,
+          name = "ladder",
+          type = "",
+          shape = "rectangle",
+          x = 456.667,
+          y = 325.333,
+          width = 47.3333,
+          height = 298.667,
+          rotation = 0,
+          visible = false,
+          properties = {}
+        },
+        {
+          id = 13,
+          name = "ladder",
+          type = "",
+          shape = "rectangle",
+          x = 136.545,
+          y = 128.581,
+          width = 47.3333,
+          height = 248,
+          rotation = 0.209073,
+          visible = false,
           properties = {}
         }
       }
